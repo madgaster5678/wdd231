@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #ADD8E6;
+    --secondary-color: #CC5500;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+}
+
+section {
+    margin: 10px;
+    padding: 10px;
+    background-color: azure;
+    border-radius: 6px;
+    text-align: center;
+    border: solid 1px var(--secondary-color);
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
