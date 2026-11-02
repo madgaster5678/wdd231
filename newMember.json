@@ -1,0 +1,23 @@
+{
+    "familyName": "Sparta",
+    "moveInDate": "2025-06-35",
+    "numberOfPeople": 3,
+    "visitedByBishopric": false,
+    "familyMembers": [
+        {
+            "name": "Dante Sparta",
+            "gender": "male",
+            "birthdate": "1990-06-13"
+        },
+        {
+            "name": "Vergil Sparta",
+            "gender": "male",
+            "birthdate": "1990-06-13"
+        },
+        {
+            "name": "Nero Sparta",
+            "gender": "male",
+            "birthdate": "2010-08-24"
+        }
+    ]
+}
