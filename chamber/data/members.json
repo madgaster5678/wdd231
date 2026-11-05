@@ -1,0 +1,66 @@
+{   "companies": [
+        {
+            "companyName":  "N&K Storage",
+            "companyAddress": "2506 W 25 Ave, Red Grave City, Colorado, USA, 84509",
+            "companyPhone": "(303)857-9013",
+            "companyURL": "https://nandkstorage.com",
+            "companyImage": "images/nk-storage.webp",
+            "companyMembership": 3,
+            "companyDescription": "N&K Storage is a storage locker company that rents out storage lockers to paying customers."
+        },
+        {
+            "companyName":  "StarBound Solutions",
+            "companyAddress": "3456 N Callback St, Red Grave City, Colorado, USA, 85741",
+            "companyPhone": "(303)761-2543",
+            "companyURL": "https://starbound-solutions.org",
+            "companyImage": "images/starbound-solutions.webp",
+            "companyMembership": 1,
+            "companyDescription": "StarBound Solutions is a company dedicated to finding clean energy solutions for the city."
+        },
+        {
+            "companyName":  "Aperture Science",
+            "companyAddress": "8719 S CaveStone Dr, Red Grave City, Colorado, USA, 82370",
+            "companyPhone": "(303)194-2673",
+            "companyURL": "https://aperture-science.org",
+            "companyImage": "images/aperture-science-logo.webp",
+            "companyMembership": 3,
+            "companyDescription": "Founded by Cave Johnson, Aperture Science is a lab company based on expanding the bounds of science through experiments."
+        },
+        {
+            "companyName":  "Octo Fishing CO.",
+            "companyAddress": "9824 E Magenta Ave, Red Grave City, Colorado, USA, 85134",
+            "companyPhone": "(303)097-1632",
+            "companyURL": "https://octofishingco.com",
+            "companyImage": "images/octo-fishing-co.webp",
+            "companyMembership": 2,
+            "companyDescription": "A fishing company that supplies restaurants with fresh seafood."
+        },
+        {
+            "companyName":  "HearthWater Camping",
+            "companyAddress": "6482 W Stonegym Dr, Red Grave City, Colorado, USA, 87149",
+            "companyPhone": "(303)008-5763",
+            "companyURL": "https://hearthwater-camping.com",
+            "companyImage": "images/hearthwater-camping.webp",
+            "companyMembership": 2,
+            "companyDescription": "A government sponsored wilderness camping facility."
+        },
+        {
+            "companyName":  "Nero Sporting",
+            "companyAddress": "6846 W Stonegym Dr, Red Grave City, Colorado, USA, 87149",
+            "companyPhone": "(303)800-9315",
+            "companyURL": "https://nero-sporting.com",
+            "companyImage": "images/nero-sporting.webp",
+            "companyMembership": 1,
+            "companyDescription": "A sporting store focused on wilderness sports like hunting and fishing."
+        },
+        {
+            "companyName":  "CherryBorn Dining",
+            "companyAddress": "1846 S 26 Ave, Red Grave City, Colorado, USA, 87562",
+            "companyPhone": "(303)714-7620",
+            "companyURL": "https://cherryborn-dining.com",
+            "companyImage": "images/cherryborn-dining.webp",
+            "companyMembership": 1,
+            "companyDescription": "A medium-sized restaurant run by a local family for the past 15 years."
+        }
+    ]
+}
