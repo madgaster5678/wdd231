@@ -1,5 +1,5 @@
 :root {
-    --body-font: sans-serif;
+    --body-font: "Roboto", sans-serif;
     --primary-color:#003b6f ;
     --secondary-color: #fff;
     --text-color: #000;
@@ -33,10 +33,9 @@ footer {
     color: var(--secondary-color);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-size: large;
+    font-size: medium;
     margin: 10px;
     padding: 10px;
-    justify-content: space-between;
 }
 
 footer .social img {
