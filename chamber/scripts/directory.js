@@ -58,9 +58,14 @@ async function getMembers() {
         companyAddress.textContent = `Address: ${company.companyAddress}`;
         companyImage.src = company.companyImage;
         companyImage.alt = company.companyName;
-        companyImage.loading = "lazy";
-        companyImage.width = "150px"
-        companyImage.height = "150px"
+        if (company.companyName === "N&K Storage") {
+            companyImage.loading = "eager";
+            companyImage.fetchPriority = "high";
+        } else {
+            companyImage.loading = "lazy";
+        }
+        companyImage.width = 300;
+        companyImage.height = 300;
         companyName.textContent = company.companyName;
         card.appendChild(companyName);
         card.appendChild(companyDescrip);
