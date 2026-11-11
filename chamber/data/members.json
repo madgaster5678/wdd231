@@ -1,7 +1,7 @@
 {   "companies": [
         {
             "companyName":  "N&K Storage",
-            "companyAddress": "2506 W 25 Ave, Red Grave City, Colorado, USA, 84509",
+            "companyAddress": "2506 W 25 Ave, Denver, Colorado, USA, 84509",
             "companyPhone": "(303)857-9013",
             "companyURL": "https://nandkstorage.com",
             "companyImage": "images/nk-storage.webp",
@@ -10,7 +10,7 @@
         },
         {
             "companyName":  "StarBound Solutions",
-            "companyAddress": "3456 N Callback St, Red Grave City, Colorado, USA, 85741",
+            "companyAddress": "3456 N Callback St, Denver, Colorado, USA, 85741",
             "companyPhone": "(303)761-2543",
             "companyURL": "https://starbound-solutions.org",
             "companyImage": "images/starbound-solutions.webp",
@@ -19,7 +19,7 @@
         },
         {
             "companyName":  "Aperture Science",
-            "companyAddress": "8719 S CaveStone Dr, Red Grave City, Colorado, USA, 82370",
+            "companyAddress": "8719 S CaveStone Dr, Denver, Colorado, USA, 82370",
             "companyPhone": "(303)194-2673",
             "companyURL": "https://aperture-science.org",
             "companyImage": "images/aperture-science-logo.webp",
@@ -28,7 +28,7 @@
         },
         {
             "companyName":  "Octo Fishing CO.",
-            "companyAddress": "9824 E Magenta Ave, Red Grave City, Colorado, USA, 85134",
+            "companyAddress": "9824 E Magenta Ave, Denver, Colorado, USA, 85134",
             "companyPhone": "(303)097-1632",
             "companyURL": "https://octofishingco.com",
             "companyImage": "images/octo-fishing-co.webp",
@@ -37,7 +37,7 @@
         },
         {
             "companyName":  "HearthWater Camping",
-            "companyAddress": "6482 W Stonegym Dr, Red Grave City, Colorado, USA, 87149",
+            "companyAddress": "6482 W Stonegym Dr, Denver, Colorado, USA, 87149",
             "companyPhone": "(303)008-5763",
             "companyURL": "https://hearthwater-camping.com",
             "companyImage": "images/hearthwater-camping.webp",
@@ -46,7 +46,7 @@
         },
         {
             "companyName":  "Nero Sporting",
-            "companyAddress": "6846 W Stonegym Dr, Red Grave City, Colorado, USA, 87149",
+            "companyAddress": "6846 W Stonegym Dr, Denver, Colorado, USA, 87149",
             "companyPhone": "(303)800-9315",
             "companyURL": "https://nero-sporting.com",
             "companyImage": "images/nero-sporting.webp",
@@ -55,7 +55,7 @@
         },
         {
             "companyName":  "CherryBorn Dining",
-            "companyAddress": "1846 S 26 Ave, Red Grave City, Colorado, USA, 87562",
+            "companyAddress": "1846 S 26 Ave, Denver, Colorado, USA, 87562",
             "companyPhone": "(303)714-7620",
             "companyURL": "https://cherryborn-dining.com",
             "companyImage": "images/cherryborn-dining.webp",
