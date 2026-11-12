@@ -61,6 +61,11 @@ h1, h2 {
     margin: 10px;
     padding: 10px;
 }
+
+footer h2 {
+    font-size: 1em;
+    margin: 0;
+}
 /*BUTTONS*/
 .directory .view-button {
     display: flex;
