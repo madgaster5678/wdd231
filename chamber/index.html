@@ -8,15 +8,15 @@
     <meta name="author" content="Ammon Griner">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <meta property="og:title" content="Denver chamber of commerce">
-    <meta property="og:description" content="This this the directory page for the chamber of commerce">
+    <meta property="og:description" content="This this the home page for the chamber of commerce">
     <meta property="og:image" content="https://madgaster5678.github.io/wdd231/chamber/images/facebook-image.webp">
-    <meta property="og:url" content="https://madgaster5678.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://madgaster5678.github.io/wdd231/chamber/index.html">
 </head>
 <body class="home">
     <header>
@@ -33,7 +33,49 @@
         </ul>
     </nav>
     <main>
-        
+        <section class="hero">
+            <img src="images/denver-hero-image.webp" alt="Denver Skyline">
+            <h1>Denver Chamber of Commerce</h1>
+            <p>Welcome to the Chamber of Commerce for Denver, Colorado. We welcome all those trying to expand their business into our fair city. Want to join the Denver Chamber of Commerce? Click the link below to learn more.</p>
+            <a href="#">Join the Chamber</a>
+        </section>
+        <section class="current-event">
+            <h2>Upcoming Events</h2>
+            <div>
+                <h3>Professional Mixer</h3>
+                <ul>
+                    <li>Where: 8514 e 26 Ave</li>
+                    <li>When: 20th of November, 2026</li>
+                    <li>Description: Join the leaders of many businesses and build your connections in the business community</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Christmas Party</h3>
+                <ul>
+                    <li>Where: 9016 w 25 Ave</li>
+                    <li>When: 25th of December, 2026</li>
+                    <li>Description: Come celebrate the holiday with people from all over the city. Join us and feel the joy of the holidays</li>
+                </ul>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>The Weather Here</h2>
+            <p>Currently, the temperature here in Denver is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <h3>Our 3-day Forecast</h3>
+            <div id="forecast">
+
+            </div>
+        </section>
+        <section class="spotlight">
+            <h2>Top Business Members</h2>
+            <div id="business-sl">
+
+            </div>
+        </section>
     </main>
     <footer>
         <section>

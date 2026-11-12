@@ -54,7 +54,7 @@ footer a.red-info:hover {
     color: var(--text-color);
 }
 
-h1 {
+h1, h2 {
     text-align: center;
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -77,8 +77,153 @@ h1 {
     background-color: var(--primary-color);
 }
 
-
 /*BODY*/
+/*HOME PAGE*/
+.home {
+    background-color: var(--background-color);
+}
+
+.home main {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+}
+
+.home .hero {
+    position: relative;
+    text-align: center;
+}
+
+.home .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.home .hero h1 {
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    right: 10%;
+    background-color: rgba(0, 59, 111, 0.6);
+}
+
+.home .hero p {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    right: 10%;
+    color: var(--secondary-color);
+    background-color: rgba(0, 59, 111, 0.6);
+    padding: 2px;
+}
+
+.home .hero a {
+    display: inline-block;
+    text-decoration: none;
+    border: var(--primary-color) solid 1px;
+    border-radius: 6px;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    padding: 5px;
+    margin: 5px;
+}
+
+.home .hero a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.home .current-event {
+    padding: 10px;
+    background-color: var(--secondary-color);
+}
+
+.home .current-event > div {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+}
+
+.home .current-event ul {
+    list-style: none;
+}
+
+.home .weather {
+    padding: 10px;
+    background-color: var(--secondary-color);
+}
+
+.home .weather figure {
+    text-align: center;
+    margin: 10px;
+}
+
+.home .weather img {
+    width: 80px;
+    height: 80px;
+}
+
+.home .spotlight {
+    padding: 10px;
+    background-color: var(--secondary-color);
+}
+
+.home #business-sl h3 {
+    margin-bottom: 5px;
+}
+
+.home #business-sl img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.home #business-sl p {
+    margin: 5px 0;
+}
+
+.home #business-sl {
+    display: grid;
+    gap: 10px;
+}
+
+.home #business-sl > h3 {
+    margin-bottom: 5px;
+}
+
+.home #business-sl article {
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.home #business-sl article a {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 5px 10px;
+    margin: 5px;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+.home #business-sl article a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.home #forecast > div {
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 10px;
+}
+/*DIRECTORY*/
 .directory {
     background-color: var(--background-color);
 }
