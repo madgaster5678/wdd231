@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denver Chamber of Commerce Home</title>
+    <meta name="description" content="This page is the directory for my chamber of commerce project. it contains the directory for several businesses in the chamber of commerce">
+    <meta name="author" content="Ammon Griner">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/join.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Denver chamber of commerce">
+    <meta property="og:description" content="This this the join page for the chamber of commerce">
+    <meta property="og:image" content="https://madgaster5678.github.io/wdd231/chamber/images/facebook-image.webp">
+    <meta property="og:url" content="https://madgaster5678.github.io/wdd231/chamber/join.html">
+</head>
+<body class="join">
+    <header>
+        <img src="images/currency-exchange.svg" alt="chamber logo">
+        <span>Denver Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="open naviagtion menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="directory.html">Business Directory</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="thankyou.html">
+            <h1>Join the Chamber of Commerce</h1>
+            <fieldset>
+                <label>First Name: <input type="text" name="fname" required autocomplete="given-name"></label>
+                <label>Last Name: <input type="text" name="lname" required autocomplete="family-name"></label>
+                <label>Organizational Title: <input type="text" name="otitle" autocomplete="organization-title"></label>
+                <label>Email: <input type="email" name="email" required placeholder="JohnSmith@email.com" autocomplete="email"></label>
+                <label>Phone: <input type="tel" name="phone" required placeholder="(123)456-7890" autocomplete="tel"></label>
+                <label>Business Name: <input type="text" name="business" required autocomplete="organization"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <div>What Membership do you Want?</div>
+                <label><input type="radio" name="membership" value="np">Non-Profit (np)</label>
+                <label><input type="radio" name="membership" value="bronze">Bronze (brz)</label>
+                <label><input type="radio" name="membership" value="silver">Silver (slv)</label>
+                <label><input type="radio" name="membership" value="gold">Gold (gld)</label>
+            </fieldset>
+            <fieldset>
+                <legend>About Your Business</legend>
+                <label>Business Name: <input type="text" name="business"></label>
+                <label>Description: <textarea name="business" id="business"></textarea></label>
+            </fieldset>
+            <input type="hidden" name="timestamp" id="datetime">
+            <input type="submit" value="Join the Chamber">
+        </form>
+        <button id="np">Non-Profit</button>
+        <dialog class="info-np" id="np">
+            <h2>Non-Profit (np)</h2>
+            <h3>Benefits:</h3>
+            <ul>
+                <li>Choice of volunteers to assist with projects or events</li>
+                <li>Place in parades on atleast 2 floats</li>
+            </ul>
+            <h4>Costs:</h4>
+            <p>Free</p>
+            <button id="close-modual">❌</button>
+        </dialog>
+        <button id="brozne">Bronze</button>
+        <dialog id="bronze">
+            <h2>Bronze (Brz)</h2>
+            <h3>Benefits:</h3>
+            <ul>
+                <li>Last choice high-level of job canadates, with second choice of medium-level applied through the chamber</li>
+                <li>Small stall in job market events hosted by the chamber</li>
+                <li>Small float for any parade your company wants to join</li>
+            </ul>
+            <h4>Costs:</h4>
+            <p>$10 per month</p>
+            <button id="close-modual">❌</button>
+        </dialog>
+        <button id="silver">Silver</button>
+        <dialog id="silver">
+            <h2>Silver (slv)</h2>
+            <h3>Benefits:</h3>
+            <ul>
+                <li>Second choice of high-level job canidates, and first choice of medium-level canidates applied through the chamber</li>
+                <li>Stalls in several job market events hosted by the chamber</li>
+                <li>Place in chamber meetings about mid-level events</li>
+            </ul>
+            <h4>Costs:</h4>
+            <p>$17 per month</p>
+            <button id="close-modual">❌</button>
+        </dialog>
+        <button id="gold">Gold</button>
+        <dialog id="gold">
+            <h2>Gold (gld)</h2>
+            <h3>Benefits:</h3>
+            <ul>
+                <li>First choice of all level job canidates applied through the chamber</li>
+                <li>Stalls in all job market events hosted by the chamber</li>
+                <li>place in chamber meetings for all event types</li>
+                <li>possible place on chamber board</li>
+            </ul>
+            <h4>Costs:</h4>
+            <p>$40 per month</p>
+            <button id="close-modual">❌</button>
+        </dialog>
+    </main>
+    <footer>
+        <section>
+            <h2>Denver Chamber of Commerce</h2>
+            <p>2303 E 23rd Ave</p>
+            <p>Denver, Colorado, USA</p>
+            <p><a href="#" class="red-info">info@Denver.org</a></p>
+            <p>(303) 668-1046</p>
+        </section>
+        <div class="social">
+            <a href="https://github.com/madgaster5678/WDD231" target="_blank"><img src="images/github.svg" alt="Github Repo"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn account"></a>
+            <a href="https://www.facebook.com/ammon.griner" target="_blank"><img src="images/facebook.svg" alt="Facebook acount"></a>
+        </div>
+        <section>
+            <h2>WDD231 Class Project</h2>
+            <p>&copy;<span id="currentyear"></span> 🐉 Ammon Griner 🐉 Tucson, Az</p>
+            <p><span id="lastmodified"></span></p>
+        </section>
+    </footer>
+</body>
+</html>
