@@ -323,7 +323,136 @@ footer h2 {
     display: none;
 }
 
+/*JOIN PAGE*/
+.join {
+    background-color: var(--background-color);
+}
 
+.join form {
+    margin: 10px;
+    padding: 10px;
+}
+
+.join fieldset {
+    margin: 10px;
+    padding: 10px;
+    border: solid 1px var(--secondary-color);
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.join label {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.join label:has(input[type="radio"]) {
+    flex-direction: row;
+    align-items: center;
+    min-height: 44px;
+}
+
+.join input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.join input[type="text"], .join input[type="email"], .join input[type="tel"], .join textarea, .join input[type="submit"] {
+    height: 50px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.join textarea {
+    height: 100px;
+    width: 100%;
+}
+
+.join input[type="submit"]:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.join input:required {
+    border-left: 8px solid red;
+}
+
+.join input:required:valid {
+    border-left: 8px solid green;
+}
+
+.join section article {
+    margin: 10px;
+    padding: 10px;
+    border: solid 1px var(--primary-color);
+    border-radius: 6px;
+    background-color: var(--secondary-color);
+    text-align: center;
+    animation: card-entry 1s ;
+}
+
+.join section article a {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-color);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.join section article a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.join section dialog {
+    padding: 20px;
+    border: 2px solid var(--primary-color);
+    border: 6px;
+    margin: 10px;
+}
+
+.join section dialog::backdrop {
+    background-color: rgb(0 0 0 / 0.5);
+}
+
+.join .close-modal {
+    display: block;
+    margin: 20px auto 0;
+    min-height: 44px;
+    min-width: 44px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 6px;
+    font-size: large;
+}
+/*THANKYOU PAGE*/
+.thanks {
+    background-color: var(--background-color);
+}
+
+.thanks main {
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border: solid 1px var(--primary-color);
+    border-radius: 6px;
+}
+
+.thanks #results {
+    margin-top: 20px;
+}
+
+.thanks #results p {
+    margin: 10px;
+    padding: 10px;
+    border-left: solid 8px var(--primary-color);
+}
 /*HAMBURGER*/
 .hamburger {
     background: none;
@@ -372,4 +501,17 @@ footer h2 {
 .navigation a:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+
+/*KEYFRAMES*/
+@keyframes card-entry {
+    from {
+        opacity: 0.3;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

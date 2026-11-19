@@ -54,6 +54,23 @@
         text-align: center;
     }
 
+    .join main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .join main section {
+        display: grid;
+        gap: 20px;
+        align-items: start;
+        margin-top: 10px;
+    }
+
+    .thanks main {
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
     .navigation {
         display: block;
         border-bottom: solid 1px #eee;

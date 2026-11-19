@@ -36,81 +36,95 @@
         <form method="get" action="thankyou.html">
             <h1>Join the Chamber of Commerce</h1>
             <fieldset>
-                <label>First Name: <input type="text" name="fname" required autocomplete="given-name"></label>
-                <label>Last Name: <input type="text" name="lname" required autocomplete="family-name"></label>
-                <label>Organizational Title: <input type="text" name="otitle" autocomplete="organization-title"></label>
-                <label>Email: <input type="email" name="email" required placeholder="JohnSmith@email.com" autocomplete="email"></label>
-                <label>Phone: <input type="tel" name="phone" required placeholder="(123)456-7890" autocomplete="tel"></label>
-                <label>Business Name: <input type="text" name="business" required autocomplete="organization"></label>
+                <legend>General Information</legend>
+                <label>First Name: <input type="text" name="fname" required autocomplete="given-name" title="Your first name"></label>
+                <label>Last Name: <input type="text" name="lname" required autocomplete="family-name" title="Your last name"></label>
+                <label>Organizational Title: <input type="text" name="otitle" autocomplete="organization-title" title="The position you hold at your company/organization" pattern="^[A-Za-z -]{7,}$"></label>
+                <label>Email: <input type="email" name="email" required placeholder="JohnSmith@email.com" autocomplete="email" title="The best email to reach you at"></label>
+                <label>Phone: <input type="tel" name="phone" required placeholder="(123)456-7890" autocomplete="tel" title="The best Phone number to reach you at"></label>
+                <label>Business Name: <input type="text" name="business" required autocomplete="organization" title="The business you work for"></label>
             </fieldset>
             <fieldset>
                 <legend>Membership Level</legend>
                 <div>What Membership do you Want?</div>
-                <label><input type="radio" name="membership" value="np">Non-Profit (np)</label>
-                <label><input type="radio" name="membership" value="bronze">Bronze (brz)</label>
-                <label><input type="radio" name="membership" value="silver">Silver (slv)</label>
-                <label><input type="radio" name="membership" value="gold">Gold (gld)</label>
+                <label><input type="radio" name="membership" value="np">Non-Profit</label>
+                <label><input type="radio" name="membership" value="bronze">Bronze</label>
+                <label><input type="radio" name="membership" value="silver">Silver</label>
+                <label><input type="radio" name="membership" value="gold">Gold</label>
             </fieldset>
             <fieldset>
                 <legend>About Your Business</legend>
-                <label>Business Name: <input type="text" name="business"></label>
-                <label>Description: <textarea name="business" id="business"></textarea></label>
+                <label>Description: <textarea name="description" title="What the business does"></textarea></label>
             </fieldset>
             <input type="hidden" name="timestamp" id="datetime">
             <input type="submit" value="Join the Chamber">
         </form>
-        <button id="np">Non-Profit</button>
-        <dialog class="info-np" id="np">
-            <h2>Non-Profit (np)</h2>
-            <h3>Benefits:</h3>
-            <ul>
-                <li>Choice of volunteers to assist with projects or events</li>
-                <li>Place in parades on atleast 2 floats</li>
-            </ul>
-            <h4>Costs:</h4>
-            <p>Free</p>
-            <button id="close-modual">❌</button>
-        </dialog>
-        <button id="brozne">Bronze</button>
-        <dialog id="bronze">
-            <h2>Bronze (Brz)</h2>
-            <h3>Benefits:</h3>
-            <ul>
-                <li>Last choice high-level of job canadates, with second choice of medium-level applied through the chamber</li>
-                <li>Small stall in job market events hosted by the chamber</li>
-                <li>Small float for any parade your company wants to join</li>
-            </ul>
-            <h4>Costs:</h4>
-            <p>$10 per month</p>
-            <button id="close-modual">❌</button>
-        </dialog>
-        <button id="silver">Silver</button>
-        <dialog id="silver">
-            <h2>Silver (slv)</h2>
-            <h3>Benefits:</h3>
-            <ul>
-                <li>Second choice of high-level job canidates, and first choice of medium-level canidates applied through the chamber</li>
-                <li>Stalls in several job market events hosted by the chamber</li>
-                <li>Place in chamber meetings about mid-level events</li>
-            </ul>
-            <h4>Costs:</h4>
-            <p>$17 per month</p>
-            <button id="close-modual">❌</button>
-        </dialog>
-        <button id="gold">Gold</button>
-        <dialog id="gold">
-            <h2>Gold (gld)</h2>
-            <h3>Benefits:</h3>
-            <ul>
-                <li>First choice of all level job canidates applied through the chamber</li>
-                <li>Stalls in all job market events hosted by the chamber</li>
-                <li>place in chamber meetings for all event types</li>
-                <li>possible place on chamber board</li>
-            </ul>
-            <h4>Costs:</h4>
-            <p>$40 per month</p>
-            <button id="close-modual">❌</button>
-        </dialog>
+        <section>
+            <article>
+                <h2>Non-Profit</h2>
+                <a href="#np-modal">Learn More</a>
+            </article>
+            <article>
+                <h2>Bronze</h2>
+                <a href="#bronze-modal">Learn More</a>
+            </article>
+            <article>
+                <h2>Silver</h2>
+                <a href="#silver-modal">Learn More</a>
+            </article>
+            <article>
+                <h2>Gold</h2>
+                <a href="#gold-modal">Learn More</a>
+            </article>
+            <dialog class="info-np" id="np-modal">
+                    <h2>Non-Profit</h2>
+                    <h3>Benefits:</h3>
+                    <ul>
+                        <li>Choice of volunteers to assist with projects or events</li>
+                        <li>Place in parades on atleast 2 floats</li>
+                    </ul>
+                    <h3>Costs:</h3>
+                    <p>Free</p>
+                    <button class="close-modal" aria-label="Close dialog">❌</button>
+            </dialog>
+            <dialog class="info-bronze" id="bronze-modal">
+                    <h2>Bronze</h2>
+                    <h3>Benefits:</h3>
+                    <ul>
+                        <li>Last choice high-level of job canadates, with second choice of medium-level applied through the chamber</li>
+                        <li>Small stall in job market events hosted by the chamber</li>
+                        <li>Small float for any parade your company wants to join</li>
+                    </ul>
+                    <h3>Costs:</h3>
+                    <p>$10 per month</p>
+                    <button class="close-modal" aria-label="Close dialog">❌</button>
+            </dialog>
+            <dialog class="info-silver" id="silver-modal">
+                    <h2>Silver</h2>
+                    <h3>Benefits:</h3>
+                    <ul>
+                        <li>Second choice of high-level job canidates, and first choice of medium-level canidates applied through the chamber</li>
+                        <li>Stalls in several job market events hosted by the chamber</li>
+                        <li>Place in chamber meetings about mid-level events</li>
+                    </ul>
+                    <h3>Costs:</h3>
+                    <p>$17 per month</p>
+                    <button class="close-modal" aria-label="Close dialog">❌</button>
+            </dialog>
+            <dialog class="info-gold" id="gold-modal">
+                    <h2>Gold</h2>
+                    <h3>Benefits:</h3>
+                    <ul>
+                        <li>First choice of all level job canidates applied through the chamber</li>
+                        <li>Stalls in all job market events hosted by the chamber</li>
+                        <li>place in chamber meetings for all event types</li>
+                        <li>possible place on chamber board</li>
+                    </ul>
+                    <h3>Costs:</h3>
+                    <p>$40 per month</p>
+                    <button class="close-modal" aria-label="Close dialog">❌</button>
+            </dialog>
+        </section>
     </main>
     <footer>
         <section>
