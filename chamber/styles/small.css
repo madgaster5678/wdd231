@@ -413,7 +413,7 @@ footer h2 {
 .join section dialog {
     padding: 20px;
     border: 2px solid var(--primary-color);
-    border: 6px;
+    border-radius: 6px;
     margin: 10px;
 }
 
