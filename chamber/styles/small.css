@@ -414,7 +414,7 @@ footer h2 {
     padding: 20px;
     border: 2px solid var(--primary-color);
     border-radius: 6px;
-    margin: 10px;
+    margin: auto;
 }
 
 .join section dialog::backdrop {
@@ -453,6 +453,8 @@ footer h2 {
     padding: 10px;
     border-left: solid 8px var(--primary-color);
 }
+/*DISCOVERY*/
+
 /*HAMBURGER*/
 .hamburger {
     background: none;
