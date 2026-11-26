@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 1025px) {
     .directory #business.list article {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -92,4 +92,47 @@
     }
 
     /**/
+    #interest {
+        display: grid;
+        grid-template-areas: 
+        "a b c"
+        "d e f"
+        "g . h";
+    }
+
+    #interest article:nth-child(1) {
+        grid-area: a;
+    }
+
+    #interest article:nth-child(2) {
+        grid-area: b;
+    }
+
+    #interest article:nth-child(3) {
+        grid-area: c;
+    }
+
+    #interest article:nth-child(4) {
+        grid-area: d;
+    }
+
+    #interest article:nth-child(5) {
+        grid-area: e;
+    }
+
+    #interest article:nth-child(6) {
+        grid-area: f;
+    }
+
+    #interest article:nth-child(7) {
+        grid-area: g;
+    }
+
+    #interest article:nth-child(8) {
+        grid-area: h;
+    }
+
+    #interest article img:hover {
+        box-shadow: 0 0 10px #333;
+    }
 }

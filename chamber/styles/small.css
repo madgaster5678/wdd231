@@ -83,11 +83,10 @@ footer h2 {
 }
 
 /*BODY*/
-/*HOME PAGE*/
-.home {
+body {
     background-color: var(--background-color);
 }
-
+/*HOME PAGE*/
 .home main {
     display: grid;
     gap: 10px;
@@ -229,10 +228,6 @@ footer h2 {
     padding: 10px;
 }
 /*DIRECTORY*/
-.directory {
-    background-color: var(--background-color);
-}
-
 .directory #business.grid article {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -324,10 +319,6 @@ footer h2 {
 }
 
 /*JOIN PAGE*/
-.join {
-    background-color: var(--background-color);
-}
-
 .join form {
     margin: 10px;
     padding: 10px;
@@ -432,10 +423,6 @@ footer h2 {
     font-size: large;
 }
 /*THANKYOU PAGE*/
-.thanks {
-    background-color: var(--background-color);
-}
-
 .thanks main {
     margin: 10px;
     padding: 10px;
@@ -454,7 +441,84 @@ footer h2 {
     border-left: solid 8px var(--primary-color);
 }
 /*DISCOVERY*/
+#visit {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: larger;
+}
+#interest {
+    display: grid;
+    grid-template-areas: 
+    "a"
+    "b"
+    "c"
+    "d"
+    "e"
+    "f"
+    "g"
+    "h";
+}
 
+#interest article:nth-child(1) {
+    grid-area: a;
+}
+
+#interest article:nth-child(2) {
+    grid-area: b;
+}
+
+#interest article:nth-child(3) {
+    grid-area: c;
+}
+
+#interest article:nth-child(4) {
+    grid-area: d;
+}
+
+#interest article:nth-child(5) {
+    grid-area: e;
+}
+
+#interest article:nth-child(6) {
+    grid-area: f;
+}
+
+#interest article:nth-child(7) {
+    grid-area: g;
+}
+
+#interest article:nth-child(8) {
+    grid-area: h;
+}
+
+#interest article {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: solid 1px var(--primary-color);
+    border-radius: 6px;
+    background-color: var(--secondary-color);
+}
+
+#interest article img {
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+#interest article button {
+    width: 100px;
+    height: 44px;
+    background-color: var(--secondary-color);
+    border-radius: 6px;
+}
+
+#interest article button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
 /*HAMBURGER*/
 .hamburger {
     background: none;
